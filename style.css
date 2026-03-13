@@ -1,0 +1,66 @@
+/* 1. Main Page Background */
+.stApp {
+    background-color: #f1f5f9 !important; /* Soft gray-blue background */
+}
+
+/* 2. Sidebar - White Text Fix */
+section[data-testid="stSidebar"] {
+    background-color: #1e293b !important;
+}
+
+section[data-testid="stSidebar"] * {
+    color: white !important;
+}
+
+/* 3. Metric Card Styling */
+div[data-testid="stMetric"] {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 15px 20px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #3b82f6; /* Blue accent bar on cards */
+}
+
+/* 4. Heading Colors */
+h1, h2, h3 {
+    color: #1e293b !important;
+    font-weight: 800 !important;
+}
+
+/* 5. Target the Chart Container background */
+.stPlotlyChart {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+/* Specifically target the File Uploader text inside the white box */
+div[data-testid="stFileUploader"] section {
+    color: #1e293b !important;
+}
+
+/* Target the 'Browse files' button text and subtext */
+div[data-testid="stFileUploader"] button {
+    color: #1e293b !important;
+}
+
+div[data-testid="stFileUploader"] div[data-testid="stMarkdownContainer"] p {
+    color: #1e293b !important;
+}
+
+/* Small limit text (e.g., 'Limit 200MB') */
+div[data-testid="stFileUploader"] small {
+    color: #475569 !important;
+}
+/* Custom colors for specific tags based on their text */
+span[data-baseweb="tag"]:has(span[title="Low (Ready)"]) {
+    background-color: #00CC96 !important;
+}
+
+span[data-baseweb="tag"]:has(span[title="Medium (Monitor)"]) {
+    background-color: #FFA15A !important;
+}
+
+span[data-baseweb="tag"]:has(span[title="High (At-Risk)"]) {
+    background-color: #EF553B !important;
+}
